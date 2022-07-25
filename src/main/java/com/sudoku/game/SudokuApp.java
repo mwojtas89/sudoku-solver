@@ -21,8 +21,6 @@ public class SudokuApp {
             } else {
                 System.out.println("Unsolvable");
             }
-
-            sudokuBoard.print();
             gameFinished = theGame.resolveSudoku();
         }
         System.out.println("Thank you for using Sudoku Solver v. 1.1");

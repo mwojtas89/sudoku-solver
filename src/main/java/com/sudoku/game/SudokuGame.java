@@ -54,7 +54,7 @@ public class SudokuGame {
         for (int i = 0; i < board.size(); i++) {
             String row = board.get(i);
             List<Integer> rowElements = new ArrayList<>();
-            String[] elements = row.split(" ");
+            String[] elements = row.split("");
             for (int n = 0; n < SIZE; n++) {
                 int element;
                 element = Integer.parseInt(elements[n]);
@@ -158,10 +158,10 @@ public class SudokuGame {
                                 elementsInRow.get(n).setValue(0);
                             }
                         }
-                    }
+                    }return false;
                 }
             }
-        }return false;
+        }return true;
     }
 }
 
